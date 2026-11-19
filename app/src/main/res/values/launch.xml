@@ -1,0 +1,12 @@
+<resources>
+    <string name="splash_brand">B-Software</string>
+    <string name="splash_product">B-Security</string>
+    <string name="splash_loading">Iniciando…</string>
+    <item name="splash_screen" type="id" />
+    <item name="splash_brand" type="id" />
+    <item name="splash_loading" type="id" />
+
+    <style name="AppLaunchTheme" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/launch_background</item>
+    </style>
+</resources>

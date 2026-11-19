@@ -1,0 +1,10 @@
+<resources>
+    <string name="security_check_title">Comprobando seguridad</string>
+    <string name="security_check_reading">Lectura en curso</string>
+    <string name="security_check_count">%1$d de %2$d lecturas completadas</string>
+    <string name="security_check_stage">Última lectura: %1$s</string>
+    <string name="security_check_complete">Comprobación completada</string>
+    <string name="security_check_failed">No se pudo completar la lectura</string>
+    <string name="security_check_ready">Ya podés revisar los resultados.</string>
+    <string name="security_check_result_detail">Los resultados aparecerán apenas termine la lectura.</string>
+</resources>

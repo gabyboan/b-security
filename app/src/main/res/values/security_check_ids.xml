@@ -1,0 +1,6 @@
+<resources>
+    <item name="check_device_button" type="id" />
+    <item name="security_check_progress" type="id" />
+    <item name="security_check_status" type="id" />
+    <item name="security_check_count" type="id" />
+</resources>

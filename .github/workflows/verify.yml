@@ -1,0 +1,50 @@
+name: Verify
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: verify-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+          package-manager-cache: false
+      - uses: actions/setup-java@v6
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: gradle/actions/setup-gradle@v6
+      - name: Prepare Android SDK
+        shell: bash
+        run: |
+          "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" "platform-tools" "platforms;android-35" "build-tools;35.0.0"
+          chmod +x gradlew
+      - name: Tests, APKs and Android lint
+        shell: pwsh
+        run: ./verify.ps1
+      - name: Save APKs and verification reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: b-security-verification
+          retention-days: 14
+          if-no-files-found: warn
+          path: |
+            app/build/outputs/apk/
+            app/build/reports/
+            app/build/test-results/

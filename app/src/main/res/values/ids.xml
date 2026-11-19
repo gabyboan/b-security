@@ -1,0 +1,26 @@
+<resources>
+    <item name="welcome_continue" type="id" />
+    <item name="google_sign_in" type="id" />
+    <item name="home_refresh" type="id" />
+    <item name="home_create" type="id" />
+    <item name="home_join" type="id" />
+    <item name="home_invite" type="id" />
+    <item name="home_share" type="id" />
+    <item name="home_stop" type="id" />
+    <item name="home_map" type="id" />
+    <item name="home_map_view" type="id" />
+    <item name="home_map_status" type="id" />
+    <item name="home_map_follow" type="id" />
+    <item name="home_map_my_location" type="id" />
+    <item name="nav_status" type="id" />
+    <item name="nav_network" type="id" />
+    <item name="nav_gps" type="id" />
+    <item name="nav_control" type="id" />
+    <item name="nav_family" type="id" />
+    <item name="screen_content" type="id" />
+    <item name="router_profile_button" type="id" />
+    <item name="check_router_button" type="id" />
+    <item name="discover_lan_button" type="id" />
+    <item name="other_subnets_button" type="id" />
+    <item name="cancel_lan_button" type="id" />
+</resources>

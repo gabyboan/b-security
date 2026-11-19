@@ -1,0 +1,10 @@
+<resources>
+    <string name="parental_description">Control parental visible. B-Security observa únicamente qué aplicación está en primer plano para aplicar bloqueos y límites diarios. No lee textos, contraseñas ni contenido de pantalla. La accesibilidad se configura en Ajustes. En una instalación común los límites pueden eludirse quitando permisos o desinstalando. El modo administrado se prepara por separado y muestra sus políticas en Protección de la app.</string>
+    <string name="nav_status">Estado</string>
+    <string name="nav_network">Red</string>
+    <string name="nav_gps">GPS</string>
+    <string name="nav_control">Control</string>
+    <string name="nav_family">Familia</string>
+    <string name="nav_description">%1$s, pestaña %2$d de %3$d</string>
+    <string name="continue_without_account">Continuar sin cuenta</string>
+</resources>
